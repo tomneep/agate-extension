@@ -6,7 +6,7 @@ import {
 import {
   ICommandPalette,
   MainAreaWidget,
-  WidgetTracker,
+  WidgetTracker
   // showDialog,
   // Dialog
 } from '@jupyterlab/apputils';
@@ -50,7 +50,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
     requestAPI<any>('version')
       .then(data => {
         version = data['version'];
-        console.log(`JupyterLab extension @climb-agate-gui version: ${version}`);
+        console.log(
+          `JupyterLab extension @climb-agate-gui version: ${version}`
+        );
       })
       .catch(error =>
         console.error(`Failed to fetch @climb-agate-gui version: ${error}`)
@@ -93,11 +95,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       });
 
       // Create the AgateWidget instance
-      const content = new AgateWidget(
-        httpPathHandler,
-        version,
-        name
-      );
+      const content = new AgateWidget(httpPathHandler, version, name);
 
       // Add class for the widget
       content.addClass('agate-Widget');
@@ -111,7 +109,6 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
       return widget;
     };
-
 
     // Command to launch the Agate GUI
     app.commands.addCommand(agateCommandID, {
@@ -175,4 +172,3 @@ const tracker = new WidgetTracker<MainAreaWidget<AgateWidget>>({
 });
 
 export default plugin;
-

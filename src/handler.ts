@@ -17,7 +17,11 @@ export async function requestAPI<T>(
   // Make request to Jupyter API
   const settings = ServerConnection.makeSettings();
 
-  const requestUrl = URLExt.join(settings.baseUrl, 'agate-jupyterlab-extension', endPoint);
+  const requestUrl = URLExt.join(
+    settings.baseUrl,
+    'agate-jupyterlab-extension',
+    endPoint
+  );
 
   const url = new URL(requestUrl);
   if (param[0] !== '') {
@@ -63,7 +67,11 @@ export async function requestAPIResponse(
   // Make request to Jupyter API
   const settings = ServerConnection.makeSettings();
 
-  const requestUrl = URLExt.join(settings.baseUrl, 'agate-jupyterlab-extension', endPoint);
+  const requestUrl = URLExt.join(
+    settings.baseUrl,
+    'agate-jupyterlab-extension',
+    endPoint
+  );
 
   const url = new URL(requestUrl);
   if (param[0] !== '') {

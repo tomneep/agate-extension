@@ -6,7 +6,7 @@ export class AgateWidget extends ReactWidget {
   constructor(
     httpPathHandler: (route: string) => Promise<Response>,
     version: string,
-    name: string,
+    name: string
   ) {
     super();
     this.httpPathHandler = httpPathHandler;
@@ -25,10 +25,7 @@ export class AgateWidget extends ReactWidget {
 
   render(): JSX.Element {
     return (
-      <Agate
-        httpPathHandler={this.httpPathHandler}
-        extVersion={this.version}
-      />
+      <Agate httpPathHandler={this.httpPathHandler} extVersion={this.version} />
     );
   }
 }
