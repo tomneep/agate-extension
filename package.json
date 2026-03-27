@@ -7,11 +7,11 @@
         "jupyterlab",
         "jupyterlab-extension"
     ],
-    "homepage": "",
+    "homepage": "https://github.com/tomneep/agate-extension",
     "bugs": {
-        "url": "/issues"
+        "url": "https://github.com/tomneep/agate-extension/issues"
     },
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "author": {
         "name": "Tom Neep",
         "email": "t.j.neep@bham.ac.uk"
