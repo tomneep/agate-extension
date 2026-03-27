@@ -1,6 +1,6 @@
 # agate_jupyterlab_extension
 
-[![Github Actions Status](/workflows/Build/badge.svg)](/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/tomneep/agate-extension/workflows/Build/badge.svg)](https://github.com/tomneep/agate-extension/actions/workflows/build.yml)
 
 A JupyterLab extension.
 
