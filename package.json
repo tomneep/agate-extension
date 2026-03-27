@@ -16,6 +16,10 @@
         "name": "Tom Neep",
         "email": "t.j.neep@bham.ac.uk"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tomneep/agate-extension"
+    },
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
         "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
@@ -24,10 +28,6 @@
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "style": "style/index.css",
-    "repository": {
-        "type": "git",
-        "url": ".git"
-    },
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
         "build:prod": "jlpm clean && jlpm build:lib:prod && jlpm build:labextension",
