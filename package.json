@@ -61,7 +61,7 @@
         "@jupyterlab/htmlviewer": "^4.4.9",
         "@jupyterlab/launcher": "^4.4.9",
         "@jupyterlab/services": "^7.0.0",
-        "climb-agate-gui": "file:../agate-gui"
+        "climb-agate-gui": "^0.2.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",

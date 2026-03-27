@@ -1776,7 +1776,7 @@ __metadata:
     "@types/react-addons-linked-state-mixin": ^0.14.22
     "@typescript-eslint/eslint-plugin": ^6.1.0
     "@typescript-eslint/parser": ^6.1.0
-    climb-agate-gui: "file:../agate-gui"
+    climb-agate-gui: ^0.2.0
     css-loader: ^6.7.1
     eslint: ^8.36.0
     eslint-config-prettier: ^8.8.0
@@ -2081,9 +2081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"climb-agate-gui@file:../agate-gui::locator=agate_jupyterlab_extension%40workspace%3A.":
-  version: 0.2.0
-  resolution: "climb-agate-gui@file:../agate-gui#../agate-gui::hash=c0721b&locator=agate_jupyterlab_extension%40workspace%3A."
+"climb-agate-gui@npm:^0.2.0":
+  version: 0.2.2
+  resolution: "climb-agate-gui@npm:0.2.2"
   dependencies:
     "@tanstack/react-query": ^4.36.1
     ag-grid-community: ^34.1.2
@@ -2093,7 +2093,7 @@ __metadata:
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 2b24885f012f496659b9125b6f60b27af25643effe1ebbab455d78a8c44c0c1e7d93c2a4674d1dd2aa2753a738d316e42c78b83e6fcce22a8022c453be6d899e
+  checksum: 86a26a289655bd4b7cbd94a9b3a5b02ff500bb45ec54db1ef1156d0908eed16d282ddd4b5218db386c9975dde14bce6f3a9c8f03fcd854d007f576d927ae4baa
   languageName: node
   linkType: hard
 
