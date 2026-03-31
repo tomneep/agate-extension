@@ -1,0 +1,36 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-publish:
+    name: Build and publish package
+    runs-on: ubuntu-latest
+
+    # Required for OIDC with PyPI
+    permissions:
+      id-token: write   # Required for trusted publishing
+      contents: read    # Needed to access repo contents
+
+    environment: pypi   # Must match your GitHub Environment + PyPI config
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install build backend
+        run: pip install build
+
+      - name: Build package (wheel + sdist)
+        run: python -m build
+
+      - name: Publish to PyPI via Trusted Publishing
+        uses: pypa/gh-action-pypi-publish@release/v1
+        # No API token needed — OIDC handles auth
